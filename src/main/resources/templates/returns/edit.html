@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Return</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Library Management System</a>
+</nav>
+<br><br><br>
+<div class="container mt-5">
+    <h1>Edit Return</h1>
+    <form th:action="@{/returns/edit/{id}(id=${return.returnId})}" th:object="${return}" method="post">
+        <div class="mb-3">
+            <label for="bookTitle" class="form-label">Book Title:</label>
+            <input type="text" id="bookTitle" th:field="*{bookTitle}" class="form-control" required/>
+        </div>
+        <div class="mb-3">
+            <label for="returnedBy" class="form-label">Returned By:</label>
+            <input type="text" id="returnedBy" th:field="*{returnedBy}" class="form-control" required/>
+        </div>
+        <div class="mb-3">
+            <label for="returnDate" class="form-label">Return Date:</label>
+            <input type="date" id="returnDate" th:field="*{returnDate}" class="form-control" required/>
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>
+    <a class="btn btn-secondary mt-3" href="/returns">Back to List</a>
+</div>
+</body>
+</html>
