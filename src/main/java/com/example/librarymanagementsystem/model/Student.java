@@ -16,21 +16,7 @@ public class Student {
 	private String address;
 	private String department;
 
-//    private double fineAmount;
-//    private List<String> borrowedBooks;
-//	public Student(Long studentId, String name, int age, String phoneNumber, String address, String department) {
-//		this.studentId = studentId;
-//		this.name = name;
-//		this.age = age;
-//		this.phoneNumber = phoneNumber;
-//		this.address = address;
-//		this.department = department;
-//// this.yearOfStudy = yearOfStudy;
-//// this.libraryCardNumber = libraryCardNumber;
-//// this.membershipExpiryDate = membershipExpiryDate;
-//// this.borrowedBooks = new ArrayList<>();
-//// this.fineAmount = 0.0;
-//	}
+
 
 	public Long getStudentId() {
 		return studentId;

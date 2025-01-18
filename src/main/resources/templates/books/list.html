@@ -98,7 +98,8 @@
                     <th>Title</th>
                     <th>Author</th>
                     <th>ISBN</th>
-                    <th>Price</th>
+                    <!-- <th>Price</th> -->
+                    <th>Quantity</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -108,7 +109,8 @@
                     <td th:text="${book.title}">Title</td>
                     <td th:text="${book.author}">Author</td>
                     <td th:text="${book.isbn}">ISBN</td>
-                    <td th:text="${book.price}">Price</td>
+                    <!-- <td th:text="${book.price}">Price</td> -->
+                    <td th:text="${book.quantity}">Price</td>
                     <td>
                         <a class="btn btn-secondary btn-sm" th:href="@{/books/edit/{id}(id=${book.id})}" >                        
                             <i class="fas fa-edit"></i> Update

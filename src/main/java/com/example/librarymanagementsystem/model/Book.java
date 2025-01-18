@@ -14,7 +14,8 @@ public class Book {
     private String title;
     private String author;
     private String isbn;
-    private Double price;
+	/* private Double price; */
+    private Integer quantity;
 
     // Getters and Setters
     public Long getId() {
@@ -49,11 +50,19 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public Double getPrice() {
-        return price;
-    }
+	/*
+	 * public Double getPrice() { return price; }
+	 * 
+	 * public void setPrice(Double price) { this.price = price; }
+	 */
 
-    public void setPrice(Double price) {
-        this.price = price;
-    }
+	public Integer getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
+
+	
 }
